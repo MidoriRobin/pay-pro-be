@@ -2,7 +2,7 @@
   "name": "pay-pro-be",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Christopher Robinson",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -14,10 +14,12 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@magic-sdk/admin": "^1.3.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/config": "^1.0.1",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "magic-sdk": "^6.0.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },
