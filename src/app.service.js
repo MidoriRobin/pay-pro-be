@@ -9,10 +9,20 @@ export class AppService {
     return 'Hello World!';
   }
 
+  /**
+   * Checks if a user matches known users (can be swapped with database calls or some other list)
+   * @param {string} user
+   * @returns true or false
+   */
   isValidUser(user) {
     return user === 'chrisaxle14@gmail.com' ? true : false;
   }
 
+  /**
+   * Validates token against what is stored in magic app
+   * @param {string} didToken
+   * @returns true if token matches otherwise false
+   */
   async validateMagicToken(didToken) {
     let isValid = false;
 
